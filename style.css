@@ -623,7 +623,7 @@ a { color: inherit; text-decoration: none; }
 .product-card {
   background: var(--md-surface);
   border-radius: var(--shape-xl);
-  overflow: hidden;
+  overflow: visible;
   box-shadow: var(--elevation-1);
   border: 1px solid var(--md-outline-var);
   display: flex;
@@ -645,6 +645,7 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   overflow: hidden;
   aspect-ratio: 4/3;
+  border-radius: var(--shape-xl) var(--shape-xl) 0 0;
 }
 .product-card__media img {
   width: 100%;
@@ -858,6 +859,98 @@ a { color: inherit; text-decoration: none; }
   transition: background var(--duration-short), transform var(--duration-short);
 }
 .detail-card__btn:hover { background: var(--md-primary-light); transform: scale(1.02); }
+
+/* ── PER-CARD ACCORDION ────────────────────────────────────── */
+.card-accordion {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 550ms var(--motion-emphasized),
+    opacity    350ms ease,
+    margin-top 400ms var(--motion-emphasized);
+  margin-top: 0;
+  border-top: 0px solid var(--md-outline-var);
+}
+.card-open .card-accordion {
+  max-height: 1200px;
+  opacity: 1;
+  margin-top: 0;
+  border-top: 1px solid var(--md-outline-var);
+}
+.card-accordion__inner {
+  padding: 20px;
+}
+.card-accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+.card-accordion__title {
+  font-size: var(--type-title-md);
+  font-weight: 700;
+  color: var(--md-primary);
+}
+.card-accordion__sub {
+  font-size: var(--type-label-sm);
+  color: var(--md-secondary);
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.card-accordion__close {
+  flex-shrink: 0;
+  background: var(--md-surface-1);
+  border: none;
+  border-radius: var(--shape-full);
+  padding: 6px;
+  cursor: pointer;
+  color: var(--md-on-surface);
+  display: flex;
+  align-items: center;
+  transition: background var(--duration-short);
+}
+.card-accordion__close:hover { background: var(--md-surface-2); }
+.card-accordion__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+.showcase-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.showcase-item__img-wrap {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--shape-md);
+  overflow: hidden;
+  background: var(--md-surface-1);
+  border: 1px solid var(--md-outline-var);
+}
+.showcase-item__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-medium) var(--motion-standard);
+}
+.showcase-item:hover .showcase-item__img-wrap img { transform: scale(1.05); }
+.showcase-item__name {
+  font-size: var(--type-label-sm);
+  font-weight: 500;
+  color: var(--md-on-surface-var);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* open state: card gets a highlight border */
+.product-card.card-open {
+  border-color: var(--md-secondary);
+  box-shadow: var(--elevation-3);
+}
 
 /* ── 11. GALLERY STRIP (infinite scroll) ──────────────────── */
 .gallery-strip {
