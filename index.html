@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)http://localhost:3000/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Royal Metal — Premium Beauty Care Manufacturing</title>
-  <meta name="description" content="Royal Metal Industrial Co., Ltd. — Korean manufacturer of premium nail clippers, manicure implements, pedicure tools, beauty tools, and hair grooming products. Located in Incheon, South Korea.">
-  <meta name="keywords" content="nail clipper, manicure, pedicure, beauty tools, hair grooming, Korean manufacturer, Royal Metal">
-  <meta property="og:title" content="Royal Metal — Premium Beauty Care Manufacturing">
-  <meta property="og:description" content="Korean manufacturer of premium beauty care products. Nail clippers, manicure sets, and more.">
-  <meta property="og:image" content="https://royalmetal.co.kr/images/royal_index_01.jpg">
-  <link rel="shortcut icon" href="https://royalmetal.co.kr/images/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="./Royal Metal — Premium Beauty Care Manufacturing_files/css2" rel="stylesheet">
-  <link href="./Royal Metal — Premium Beauty Care Manufacturing_files/icon" rel="stylesheet">
-  <link rel="stylesheet" href="./Royal Metal — Premium Beauty Care Manufacturing_files/style.css">
+  <meta name="description" content="Royal Metal Industrial Co., Ltd. — Korean manufacturer of premium nail clippers, manicure implements, pedicure tools, beauty tools, and hair grooming products. Located in Incheon, South Korea." />
+  <meta name="keywords" content="nail clipper, manicure, pedicure, beauty tools, hair grooming, Korean manufacturer, Royal Metal" />
+  <meta property="og:title" content="Royal Metal — Premium Beauty Care Manufacturing" />
+  <meta property="og:description" content="Korean manufacturer of premium beauty care products. Nail clippers, manicure sets, and more." />
+  <meta property="og:image" content="https://royalmetal.co.kr/images/royal_index_01.jpg" />
+  <link rel="shortcut icon" href="https://royalmetal.co.kr/images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Display:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="loaded">
+<body>
 
   <!-- ─── TOP APP BAR ─────────────────────────────────────────────── -->
-  <header class="top-bar scrolled" id="top-bar">
+  <header class="top-bar" id="top-bar">
     <div class="top-bar__inner">
-      <a href="http://localhost:3000/#home" class="top-bar__logo" aria-label="Royal Metal home">
-        <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_logo.png" alt="Royal Metal" referrerpolicy="no-referrer">
+      <a href="#home" class="top-bar__logo" aria-label="Royal Metal home">
+        <img src="https://royalmetal.co.kr/images/royal_logo.png" alt="Royal Metal" referrerpolicy="no-referrer" />
       </a>
       <nav class="top-bar__nav" aria-label="Main navigation">
-        <a href="http://localhost:3000/#home" class="nav-link" data-section="home">Home</a>
-        <a href="http://localhost:3000/#about" class="nav-link" data-section="about">About</a>
-        <a href="http://localhost:3000/#products" class="nav-link" data-section="products">Products</a>
-        <a href="http://localhost:3000/#contact" class="nav-link active" data-section="contact">Contact</a>
+        <a href="#home"     class="nav-link active" data-section="home"     data-i18n="nav.home">Home</a>
+        <a href="#about"    class="nav-link"         data-section="about"    data-i18n="nav.about">About</a>
+        <a href="#products" class="nav-link"         data-section="products" data-i18n="nav.products">Products</a>
+        <a href="#contact"  class="nav-link"         data-section="contact"  data-i18n="nav.contact">Contact</a>
       </nav>
-      <div class="top-bar__lang">
-        <a href="https://royalmetal.co.kr/index_KO.html" target="_blank" rel="noopener" class="lang-chip">🇰🇷 KO</a>
-        <a href="https://royalmetal.co.kr/index_JP.html" target="_blank" rel="noopener" class="lang-chip">🇯🇵 JP</a>
-        <a href="https://royalmetal.co.kr/index_ES.html" target="_blank" rel="noopener" class="lang-chip">🇪🇸 ES</a>
-        <a href="https://royalmetal.co.kr/index_CN.html" target="_blank" rel="noopener" class="lang-chip">🇨🇳 CN</a>
+      <div class="top-bar__lang" role="group" aria-label="Language selector">
+        <button class="lang-chip lang-active" data-lang="en" aria-label="English">🌐 EN</button>
+        <button class="lang-chip" data-lang="ko" aria-label="Korean">🇰🇷 KO</button>
+        <button class="lang-chip" data-lang="jp" aria-label="Japanese">🇯🇵 JP</button>
+        <button class="lang-chip" data-lang="es" aria-label="Spanish">🇪🇸 ES</button>
+        <button class="lang-chip" data-lang="cn" aria-label="Chinese">🇨🇳 CN</button>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span class="material-icons-round">menu</span>
@@ -48,42 +49,49 @@
     <button class="drawer__close" id="drawer-close" aria-label="Close menu">
       <span class="material-icons-round">close</span>
     </button>
-    <a href="http://localhost:3000/#home" class="drawer__link" data-section="home">Home</a>
-    <a href="http://localhost:3000/#about" class="drawer__link" data-section="about">About</a>
-    <a href="http://localhost:3000/#products" class="drawer__link" data-section="products">Products</a>
-    <a href="http://localhost:3000/#contact" class="drawer__link active" data-section="contact">Contact</a>
-    <div class="drawer__lang">
-      <a href="https://royalmetal.co.kr/index_KO.html" target="_blank" class="lang-chip">🇰🇷 KO</a>
-      <a href="https://royalmetal.co.kr/index_JP.html" target="_blank" class="lang-chip">🇯🇵 JP</a>
-      <a href="https://royalmetal.co.kr/index_ES.html" target="_blank" class="lang-chip">🇪🇸 ES</a>
-      <a href="https://royalmetal.co.kr/index_CN.html" target="_blank" class="lang-chip">🇨🇳 CN</a>
+    <a href="#home"     class="drawer__link" data-section="home"     data-i18n="nav.home">Home</a>
+    <a href="#about"    class="drawer__link" data-section="about"    data-i18n="nav.about">About</a>
+    <a href="#products" class="drawer__link" data-section="products" data-i18n="nav.products">Products</a>
+    <a href="#contact"  class="drawer__link" data-section="contact"  data-i18n="nav.contact">Contact</a>
+    <div class="drawer__lang" role="group" aria-label="Language selector">
+      <button class="lang-chip lang-active" data-lang="en" aria-label="English">🌐 EN</button>
+      <button class="lang-chip" data-lang="ko" aria-label="Korean">🇰🇷 KO</button>
+      <button class="lang-chip" data-lang="jp" aria-label="Japanese">🇯🇵 JP</button>
+      <button class="lang-chip" data-lang="es" aria-label="Spanish">🇪🇸 ES</button>
+      <button class="lang-chip" data-lang="cn" aria-label="Chinese">🇨🇳 CN</button>
     </div>
   </nav>
 
   <!-- ─── HERO ─────────────────────────────────────────────────────── -->
-  <section class="hero loaded" id="home" aria-label="Hero">
+  <section class="hero" id="home" aria-label="Hero">
     <div class="hero__media">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/header_image1.jpg" alt="Royal Metal factory and products" class="hero__bg" loading="eager" referrerpolicy="no-referrer">
+      <img
+        src="https://royalmetal.co.kr/images/header_image1.jpg"
+        alt="Royal Metal factory and products"
+        class="hero__bg"
+        loading="eager"
+        referrerpolicy="no-referrer"
+      />
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
-      <div class="hero__eyebrow hero-animate">Est. in Incheon, South Korea</div>
+      <div class="hero__eyebrow hero-animate" data-i18n="hero.eyebrow">Est. in Incheon, South Korea</div>
       <h1 class="hero__title hero-animate" style="transition-delay:120ms">
-        Precision Crafted<br>
-        <span class="hero__accent">Beauty Tools</span>
+        <span data-i18n="hero.title1">Precision Crafted</span><br />
+        <span class="hero__accent" data-i18n="hero.title2">Beauty Tools</span>
       </h1>
-      <p class="hero__sub hero-animate" style="transition-delay:240ms">
+      <p class="hero__sub hero-animate" style="transition-delay:240ms" data-i18n="hero.sub">
         Royal Metal Industrial Co., Ltd. — Korean manufacturer of premium nail clippers,
         grooming instruments, and beauty care products.
       </p>
       <div class="hero__actions hero-animate" style="transition-delay:360ms">
-        <a href="http://localhost:3000/#products" class="btn-filled">
+        <a href="#products" class="btn-filled">
           <span class="material-icons-round">grid_view</span>
-          Explore Products
+          <span data-i18n="hero.btn1">Explore Products</span>
         </a>
-        <a href="http://localhost:3000/#contact" class="btn-tonal">
+        <a href="#contact" class="btn-tonal">
           <span class="material-icons-round">mail_outline</span>
-          Get in Touch
+          <span data-i18n="hero.btn2">Get in Touch</span>
         </a>
       </div>
     </div>
@@ -92,16 +100,16 @@
     </div>
   </section>
 
-  <!-- ─── ABOUT STRIP ───────────────────────────────────────────────── -->
+  <!-- ─── ABOUT ────────────────────────────────────────────────────── -->
   <section class="about" id="about" aria-label="About Royal Metal">
     <div class="about__inner">
-      <div class="about__text reveal revealed">
-        <div class="section-eyebrow">Since 1950s</div>
-        <h2 class="section-title">Royal Metal IND. CO., LTD</h2>
-        <p class="about__korean-desc">
-          <strong>ROYAL 로얄금속공업(주)</strong>는 1950년대 설립된 한국의 정밀 금속 가공 전문 기업으로, 손톱깎이와 코털정리기 등 생활용품 제조에 높은 기술력을 보유하고 있습니다. 전통적인 금속 가공 기술과 꾸준한 기술 혁신을 바탕으로 국내는 물론 전 세계 5개 대륙에 제품을 수출하고 있으며, 현재는 세계 최고 수준의 기능과 품질을 갖춘 코털정리기를 자체 개발·생산하고 있습니다. ROYAL은 늘 사람을 생각하는 기술로, 신뢰받는 브랜드로 성장하고 있습니다.
+      <div class="about__text reveal">
+        <div class="section-eyebrow" data-i18n="about.eyebrow">Since 1950s</div>
+        <h2 class="section-title" data-i18n="about.title">Royal Metal IND. CO., LTD</h2>
+        <p class="about__korean-desc" data-i18n-html="about.desc">
+          <strong>ROYAL Metal Industrial Co., Ltd.</strong> is a Korean precision metalworking company established in the 1950s, specialising in nail clippers and nose hair trimmers. Based on traditional craftsmanship and continuous innovation, we export to 5 continents worldwide and develop world-class nose hair trimmers in-house. ROYAL grows as a trusted brand, always putting people first through technology.
         </p>
-        
+
         <div class="about__contact-info">
           <div class="about__contact-item">
             <span class="material-icons-round">email</span>
@@ -114,19 +122,28 @@
         </div>
 
         <div class="about__chips">
-          <span class="info-chip"><span class="material-icons-round">verified</span> ISO Quality</span>
-          <span class="info-chip"><span class="material-icons-round">public</span> Global Export</span>
-          <span class="info-chip"><span class="material-icons-round">factory</span> Own Factory</span>
+          <span class="info-chip">
+            <span class="material-icons-round">verified</span>
+            <span data-i18n="about.chip1">ISO Quality</span>
+          </span>
+          <span class="info-chip">
+            <span class="material-icons-round">public</span>
+            <span data-i18n="about.chip2">Global Export</span>
+          </span>
+          <span class="info-chip">
+            <span class="material-icons-round">factory</span>
+            <span data-i18n="about.chip3">Own Factory</span>
+          </span>
         </div>
       </div>
-      <div class="about__gallery reveal revealed">
+      <div class="about__gallery reveal">
         <div class="about__gallery-col">
-          <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_01.jpg" alt="Factory interior" class="about__img" referrerpolicy="no-referrer">
-          <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_02.jpg" alt="Product showcase" class="about__img" referrerpolicy="no-referrer">
+          <img src="https://royalmetal.co.kr/images/royal_index_01.jpg" alt="Factory interior" class="about__img" referrerpolicy="no-referrer" />
+          <img src="https://royalmetal.co.kr/images/royal_index_02.jpg" alt="Product showcase" class="about__img" referrerpolicy="no-referrer" />
         </div>
         <div class="about__gallery-col">
-          <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_03.jpg" alt="Nail clippers" class="about__img" referrerpolicy="no-referrer">
-          <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_04.jpg" alt="Manicure tools" class="about__img" referrerpolicy="no-referrer">
+          <img src="https://royalmetal.co.kr/images/royal_index_03.jpg" alt="Nail clippers" class="about__img" referrerpolicy="no-referrer" />
+          <img src="https://royalmetal.co.kr/images/royal_index_04.jpg" alt="Manicure tools" class="about__img" referrerpolicy="no-referrer" />
         </div>
       </div>
     </div>
@@ -134,130 +151,130 @@
 
   <!-- ─── STATS ROW ─────────────────────────────────────────────────── -->
   <div class="stats-row" aria-label="Company statistics">
-    <div class="stat reveal revealed">
-      <span class="stat__num" data-target="30">30</span><span class="stat__unit">+</span>
-      <span class="stat__label">Years of Experience</span>
+    <div class="stat reveal">
+      <span class="stat__num" data-target="30">0</span><span class="stat__unit">+</span>
+      <span class="stat__label" data-i18n="stats.years">Years of Experience</span>
     </div>
     <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat reveal revealed">
-      <span class="stat__num" data-target="50">50</span><span class="stat__unit">+</span>
-      <span class="stat__label">Countries Served</span>
+    <div class="stat reveal">
+      <span class="stat__num" data-target="50">0</span><span class="stat__unit">+</span>
+      <span class="stat__label" data-i18n="stats.countries">Countries Served</span>
     </div>
     <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat reveal revealed">
-      <span class="stat__num" data-target="200">200</span><span class="stat__unit">+</span>
-      <span class="stat__label">Product Variants</span>
+    <div class="stat reveal">
+      <span class="stat__num" data-target="200">0</span><span class="stat__unit">+</span>
+      <span class="stat__label" data-i18n="stats.products">Product Variants</span>
     </div>
     <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat reveal revealed">
-      <span class="stat__num" data-target="100">100</span><span class="stat__unit">%</span>
-      <span class="stat__label">Korean Craftsmanship</span>
+    <div class="stat reveal">
+      <span class="stat__num" data-target="100">0</span><span class="stat__unit">%</span>
+      <span class="stat__label" data-i18n="stats.craft">Korean Craftsmanship</span>
     </div>
   </div>
 
   <!-- ─── PRODUCTS ──────────────────────────────────────────────────── -->
   <section class="products" id="products" aria-label="Products">
     <div class="products__inner">
-      <div class="section-header reveal revealed">
-        <div class="section-eyebrow">Our Range</div>
-        <h2 class="section-title">Product Categories</h2>
-        <p class="section-sub">From precision nail clippers to professional grooming kits — crafted with Korean excellence. Click any category below to view items in-page.</p>
+      <div class="section-header reveal">
+        <div class="section-eyebrow" data-i18n="products.eyebrow">Our Range</div>
+        <h2 class="section-title" data-i18n="products.title">Product Categories</h2>
+        <p class="section-sub" data-i18n="products.sub">From precision nail clippers to professional grooming kits — crafted with Korean excellence. Click any category below to view items in-page.</p>
       </div>
 
       <div class="products__grid">
 
-        <article class="product-card reveal revealed" data-category="clippers" tabindex="0">
+        <article class="product-card reveal" data-category="clippers" tabindex="0">
           <div class="product-card__media">
-            <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/Nail_Clippers.jpg" alt="Nail Clippers" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://royalmetal.co.kr/products/Nail_Clippers.jpg" alt="Nail Clippers" loading="lazy" referrerpolicy="no-referrer" />
             <div class="product-card__overlay">
               <span class="material-icons-round">unfold_more</span>
             </div>
           </div>
           <div class="product-card__body">
-            <h3 class="product-card__title">Nail Clippers</h3>
-            <p class="product-card__desc">Precision-engineered stainless steel nail clippers for professional and consumer use.</p>
-            <button class="product-card__btn-view" aria-label="View Nail Clippers items">
-              View Items <span class="material-icons-round">expand_more</span>
+            <h3 class="product-card__title" data-i18n="card.clippers.title">Nail Clippers</h3>
+            <p class="product-card__desc" data-i18n="card.clippers.desc">Precision-engineered stainless steel nail clippers for professional and consumer use.</p>
+            <button class="product-card__btn-view">
+              <span data-i18n="card.btn">View Items</span> <span class="material-icons-round">expand_more</span>
             </button>
           </div>
         </article>
 
-        <article class="product-card reveal revealed" data-category="manicure" tabindex="0">
+        <article class="product-card reveal" data-category="manicure" tabindex="0">
           <div class="product-card__media">
-            <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/manicure_implements.jpg" alt="Manicure Implements" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://royalmetal.co.kr/products/manicure_implements.jpg" alt="Manicure Implements" loading="lazy" referrerpolicy="no-referrer" />
             <div class="product-card__overlay">
               <span class="material-icons-round">unfold_more</span>
             </div>
           </div>
           <div class="product-card__body">
-            <h3 class="product-card__title">Manicure Implements</h3>
-            <p class="product-card__desc">Complete range of manicure tools for salon-quality nail care at home and professionally.</p>
-            <button class="product-card__btn-view" aria-label="View Manicure Implements items">
-              View Items <span class="material-icons-round">expand_more</span>
+            <h3 class="product-card__title" data-i18n="card.manicure.title">Manicure Implements</h3>
+            <p class="product-card__desc" data-i18n="card.manicure.desc">Complete range of manicure tools for salon-quality nail care at home and professionally.</p>
+            <button class="product-card__btn-view">
+              <span data-i18n="card.btn">View Items</span> <span class="material-icons-round">expand_more</span>
             </button>
           </div>
         </article>
 
-        <article class="product-card reveal revealed" data-category="pedicure" tabindex="0">
+        <article class="product-card reveal" data-category="pedicure" tabindex="0">
           <div class="product-card__media">
-            <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/Pedicure.jpg" alt="Pedicure Tools" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://royalmetal.co.kr/products/Pedicure.jpg" alt="Pedicure Tools" loading="lazy" referrerpolicy="no-referrer" />
             <div class="product-card__overlay">
               <span class="material-icons-round">unfold_more</span>
             </div>
           </div>
           <div class="product-card__body">
-            <h3 class="product-card__title">Pedicure Tools</h3>
-            <p class="product-card__desc">Professional pedicure instruments designed for comfort, hygiene, and lasting precision.</p>
-            <button class="product-card__btn-view" aria-label="View Pedicure Tools items">
-              View Items <span class="material-icons-round">expand_more</span>
+            <h3 class="product-card__title" data-i18n="card.pedicure.title">Pedicure Tools</h3>
+            <p class="product-card__desc" data-i18n="card.pedicure.desc">Professional pedicure instruments designed for comfort, hygiene, and lasting precision.</p>
+            <button class="product-card__btn-view">
+              <span data-i18n="card.btn">View Items</span> <span class="material-icons-round">expand_more</span>
             </button>
           </div>
         </article>
 
-        <article class="product-card reveal revealed" data-category="beauty" tabindex="0">
+        <article class="product-card reveal" data-category="beauty" tabindex="0">
           <div class="product-card__media">
-            <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/Beauty_tools.jpg" alt="Beauty Tools" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://royalmetal.co.kr/products/Beauty_tools.jpg" alt="Beauty Tools" loading="lazy" referrerpolicy="no-referrer" />
             <div class="product-card__overlay">
               <span class="material-icons-round">unfold_more</span>
             </div>
           </div>
           <div class="product-card__body">
-            <h3 class="product-card__title">Beauty Tools</h3>
-            <p class="product-card__desc">Innovative beauty instruments that combine ergonomic design with durable craftsmanship.</p>
-            <button class="product-card__btn-view" aria-label="View Beauty Tools items">
-              View Items <span class="material-icons-round">expand_more</span>
+            <h3 class="product-card__title" data-i18n="card.beauty.title">Beauty Tools</h3>
+            <p class="product-card__desc" data-i18n="card.beauty.desc">Innovative beauty instruments that combine ergonomic design with durable craftsmanship.</p>
+            <button class="product-card__btn-view">
+              <span data-i18n="card.btn">View Items</span> <span class="material-icons-round">expand_more</span>
             </button>
           </div>
         </article>
 
-        <article class="product-card reveal revealed" data-category="hair" tabindex="0">
+        <article class="product-card reveal" data-category="hair" tabindex="0">
           <div class="product-card__media">
-            <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/Hair_Grooming.jpg" alt="Hair Grooming" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://royalmetal.co.kr/products/Hair_Grooming.jpg" alt="Hair Grooming" loading="lazy" referrerpolicy="no-referrer" />
             <div class="product-card__overlay">
               <span class="material-icons-round">unfold_more</span>
             </div>
           </div>
           <div class="product-card__body">
-            <h3 class="product-card__title">Hair Grooming</h3>
-            <p class="product-card__desc">Precision hair grooming tools including nose hair trimmers and ear hair removers.</p>
-            <button class="product-card__btn-view" aria-label="View Hair Grooming items">
-              View Items <span class="material-icons-round">expand_more</span>
+            <h3 class="product-card__title" data-i18n="card.hair.title">Hair Grooming</h3>
+            <p class="product-card__desc" data-i18n="card.hair.desc">Precision hair grooming tools including nose hair trimmers and ear hair removers.</p>
+            <button class="product-card__btn-view">
+              <span data-i18n="card.btn">View Items</span> <span class="material-icons-round">expand_more</span>
             </button>
           </div>
         </article>
 
-        <article class="product-card reveal revealed" data-category="sets" tabindex="0">
+        <article class="product-card reveal" data-category="sets" tabindex="0">
           <div class="product-card__media">
-            <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/manicure_set.jpg" alt="Manicure Sets" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://royalmetal.co.kr/products/manicure_set.jpg" alt="Manicure Sets" loading="lazy" referrerpolicy="no-referrer" />
             <div class="product-card__overlay">
               <span class="material-icons-round">unfold_more</span>
             </div>
           </div>
           <div class="product-card__body">
-            <h3 class="product-card__title">Manicure Sets</h3>
-            <p class="product-card__desc">Elegant gift-ready manicure sets packaged with premium tools for complete nail care.</p>
-            <button class="product-card__btn-view" aria-label="View Manicure Sets items">
-              View Items <span class="material-icons-round">expand_more</span>
+            <h3 class="product-card__title" data-i18n="card.sets.title">Manicure Sets</h3>
+            <p class="product-card__desc" data-i18n="card.sets.desc">Elegant gift-ready manicure sets packaged with premium tools for complete nail care.</p>
+            <button class="product-card__btn-view">
+              <span data-i18n="card.btn">View Items</span> <span class="material-icons-round">expand_more</span>
             </button>
           </div>
         </article>
@@ -276,9 +293,7 @@
               <span class="material-icons-round">close</span>
             </button>
           </div>
-          <div class="showcase-grid" id="showcase-grid">
-            <!-- Dynamically populated via JavaScript -->
-          </div>
+          <div class="showcase-grid" id="showcase-grid"></div>
         </div>
       </div>
 
@@ -288,19 +303,18 @@
   <!-- ─── GALLERY STRIP ────────────────────────────────────────────── -->
   <section class="gallery-strip" aria-label="Product gallery">
     <div class="gallery-strip__track">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_01.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_02.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_03.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_04.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_05.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_06.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <!-- duplicate for seamless loop -->
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_01.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_02.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_03.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_04.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_05.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
-      <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_index_06.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer">
+      <img src="https://royalmetal.co.kr/images/royal_index_01.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_02.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_03.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_04.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_05.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_06.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_01.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_02.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_03.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_04.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_05.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
+      <img src="https://royalmetal.co.kr/images/royal_index_06.jpg" alt="" aria-hidden="true" referrerpolicy="no-referrer" />
     </div>
   </section>
 
@@ -308,48 +322,59 @@
   <section class="contact" id="contact" aria-label="Contact">
     <div class="contact__inner">
       <div class="section-header">
-        <div class="section-eyebrow">Get In Touch</div>
-        <h2 class="section-title">Contact Us</h2>
-        <p class="section-sub">We welcome inquiries from buyers, distributors, and partners worldwide.</p>
+        <div class="section-eyebrow" data-i18n="contact.eyebrow">Get In Touch</div>
+        <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
+        <p class="section-sub" data-i18n="contact.sub">We welcome inquiries from buyers, distributors, and partners worldwide.</p>
       </div>
 
       <div class="contact__grid">
-        <!-- Info cards -->
         <div class="contact__cards">
+
           <div class="contact-card">
             <div class="contact-card__icon">
               <span class="material-icons-round">location_on</span>
             </div>
             <div>
-              <h3 class="contact-card__title">Factory &amp; Head Office</h3>
-              <p>1, Baekbeom-ro 701beon-gil,<br>Seo-gu, Incheon, South Korea<br><small>Post Code: 22829</small></p>
+              <h3 class="contact-card__title" data-i18n="contact.addr.title">Factory &amp; Head Office</h3>
+              <p data-i18n-html="contact.addr.body">1, Baekbeom-ro 701beon-gil,<br />Seo-gu, Incheon, South Korea<br /><small>Post Code: 22829</small></p>
             </div>
           </div>
+
           <div class="contact-card">
             <div class="contact-card__icon">
               <span class="material-icons-round">phone</span>
             </div>
             <div>
-              <h3 class="contact-card__title">Phone</h3>
-              <p>Export &amp; Import: <a href="tel:+82275370490">+82-2-753-7049</a><br>
-              국내 영업: <a href="tel:+82234633734">+82-2-346-3734</a></p>
+              <h3 class="contact-card__title" data-i18n="contact.phone.title">Phone</h3>
+              <p data-i18n-html="contact.phone.body">Export &amp; Import: <a href="tel:+82275370490">+82-2-753-7049</a><br />
+              Domestic: <a href="tel:+82234633734">+82-2-346-3734</a></p>
             </div>
           </div>
+
           <div class="contact-card">
             <div class="contact-card__icon">
               <span class="material-icons-round">email</span>
             </div>
             <div>
-              <h3 class="contact-card__title">Email</h3>
-              <p>Export: <a href="mailto:master@royalmetal.co.kr">master@royalmetal.co.kr</a><br>
-              국내: <a href="mailto:korea@royalmetal.co.kr">korea@royalmetal.co.kr</a></p>
+              <h3 class="contact-card__title" data-i18n="contact.email.title">Email</h3>
+              <p data-i18n-html="contact.email.body">Export: <a href="mailto:master@royalmetal.co.kr">master@royalmetal.co.kr</a><br />
+              Domestic: <a href="mailto:korea@royalmetal.co.kr">korea@royalmetal.co.kr</a></p>
             </div>
           </div>
+
         </div>
 
         <!-- Map -->
         <div class="contact__map">
-          <iframe title="Royal Metal factory location on Google Maps" src="./Royal Metal — Premium Beauty Care Manufacturing_files/maps.html" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            title="Royal Metal factory location on Google Maps"
+            src="https://maps.google.com/maps?q=1,%20Baekbeom-ro%20701beon-gil,%20Seo-gu,%20Incheon,%20South%20Korea&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="420"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </div>
@@ -359,42 +384,43 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__brand">
-        <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/royal_logo.png" alt="Royal Metal" class="footer__logo" referrerpolicy="no-referrer">
-        <p class="footer__tagline">Precision Crafted in Korea</p>
+        <img src="https://royalmetal.co.kr/images/royal_logo.png" alt="Royal Metal" class="footer__logo" referrerpolicy="no-referrer" />
+        <p class="footer__tagline" data-i18n="footer.tagline">Precision Crafted in Korea</p>
       </div>
       <div class="footer__links">
-        <h4>Navigation</h4>
-        <a href="http://localhost:3000/#home">Home</a>
-        <a href="http://localhost:3000/#about">About</a>
-        <a href="http://localhost:3000/#products">Products</a>
-        <a href="http://localhost:3000/#contact">Contact</a>
+        <h4 data-i18n="footer.nav">Navigation</h4>
+        <a href="#home"     data-i18n="footer.home">Home</a>
+        <a href="#about"    data-i18n="footer.about">About</a>
+        <a href="#products" data-i18n="footer.products">Products</a>
+        <a href="#contact"  data-i18n="footer.contact">Contact</a>
       </div>
       <div class="footer__social">
-        <h4>Follow Us</h4>
+        <h4 data-i18n="footer.follow">Follow Us</h4>
         <div class="footer__social-row">
           <a href="http://royalmetal-korea.blogspot.kr/" target="_blank" rel="noopener" aria-label="Blog" class="social-btn">
-            <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/blogger.png" alt="Blog" referrerpolicy="no-referrer">
+            <img src="https://royalmetal.co.kr/images/blogger.png" alt="Blog" referrerpolicy="no-referrer" />
           </a>
           <a href="https://www.facebook.com/pages/%EB%A1%9C%EC%96%84%EA%B8%88%EC%86%8D%EA%B3%B5%EC%97%85/728430057255983" target="_blank" rel="noopener" aria-label="Facebook" class="social-btn">
-            <img src="./Royal Metal — Premium Beauty Care Manufacturing_files/facebook.png" alt="Facebook" referrerpolicy="no-referrer">
+            <img src="https://royalmetal.co.kr/images/facebook.png" alt="Facebook" referrerpolicy="no-referrer" />
           </a>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2025 Royal Metal Industrial Co., Ltd. All rights reserved.</p>
+      <p>&copy; 2025 Royal Metal Industrial Co., Ltd. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Progress indicator -->
-  <div class="scroll-progress" id="scroll-progress" aria-hidden="true" style="width: 93.058%;"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
   <!-- Back to top FAB -->
-  <button class="fab-top visible" id="fab-top" aria-label="Back to top">
+  <button class="fab-top" id="fab-top" aria-label="Back to top">
     <span class="material-icons-round">keyboard_arrow_up</span>
   </button>
 
-  <script src="./Royal Metal — Premium Beauty Care Manufacturing_files/main.js.다운로드"></script>
-
-
-</body></html>
+  <!-- i18n must load before main.js -->
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
