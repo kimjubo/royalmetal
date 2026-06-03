@@ -901,7 +901,7 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 48px;
-  align-items: start;
+  align-items: stretch;   /* both columns share the same height */
 }
 .contact__cards {
   display: flex;
@@ -916,6 +916,7 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--md-outline-var);
   border-radius: var(--shape-xl);
   padding: 24px;
+  flex: 1;              /* cards share space evenly inside the column */
   transition: box-shadow var(--duration-medium), transform var(--duration-medium);
 }
 .contact-card:hover { box-shadow: var(--elevation-2); transform: translateY(-2px); }
@@ -963,11 +964,16 @@ a { color: inherit; text-decoration: none; }
   position: sticky;
   top: 88px;
   background: var(--md-surface-2);
+  /* stretch map to match cards column height */
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
 }
 .contact__map iframe {
   display: block;
   width: 100%;
-  height: 420px;
+  flex: 1;        /* fills remaining height so top & bottom edges align */
+  min-height: 420px;
   border: 0;
 }
 
