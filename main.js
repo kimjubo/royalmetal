@@ -167,6 +167,27 @@ const counterObserver = new IntersectionObserver(
 qsa('.stat__num[data-target]').forEach(el => counterObserver.observe(el));
 
 // ── Product showcase (in-page drawer) ────────────────────────
+// Returns the column count of the products grid at current viewport
+function getGridCols() {
+  const w = window.innerWidth;
+  if (w <= 768)  return 1;
+  if (w <= 1024) return 2;
+  return 3;
+}
+
+// Inserts the showcase drawer after the last card in the same row as targetCard
+function insertShowcaseAfterRow(targetCard) {
+  const cards   = qsa('.product-card', qs('#products-grid'));
+  const drawer  = qs('#showcase-drawer');
+  const cols    = getGridCols();
+  const idx     = cards.indexOf(targetCard);          // 0-based
+  const rowEnd  = Math.min(Math.ceil((idx + 1) / cols) * cols - 1, cards.length - 1);
+  const anchor  = cards[rowEnd];                      // last card in the row
+
+  // Insert drawer right after anchor card (or re-insert if already there)
+  anchor.after(drawer);
+}
+
 const PRODUCTS = {
   clippers: {
     title: 'Nail Clippers',
@@ -241,9 +262,12 @@ const showcaseSub    = qs('#showcase-subtitle');
 const showcaseClose  = qs('#showcase-close');
 let   openCategory   = null;
 
-function openShowcase(category) {
+function openShowcase(category, triggerCard) {
   const data = PRODUCTS[category];
   if (!data || !showcaseDrawer) return;
+
+  // Move drawer to correct row position before opening
+  if (triggerCard) insertShowcaseAfterRow(triggerCard);
 
   openCategory = category;
   showcaseTitle.textContent = data.title;
@@ -285,7 +309,7 @@ qsa('.product-card').forEach(card => {
     if (openCategory === cat) {
       closeShowcase();
     } else {
-      openShowcase(cat);
+      openShowcase(cat, card);
     }
   });
   card.addEventListener('keydown', e => {
@@ -309,7 +333,7 @@ qsa('.product-card__btn-view').forEach(btn => {
       if (openCategory === cat) {
         closeShowcase();
       } else {
-        openShowcase(cat);
+        openShowcase(cat, card);
       }
     }
   });
