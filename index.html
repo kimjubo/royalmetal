@@ -181,7 +181,7 @@
         <p class="section-sub" data-i18n="products.sub">From precision nail clippers to professional grooming kits — crafted with Korean excellence. Click any category below to view items in-page.</p>
       </div>
 
-      <div class="products__grid">
+      <div class="products__grid" id="products-grid">
 
         <article class="product-card reveal" data-category="clippers" tabindex="0">
           <div class="product-card__media">
@@ -279,23 +279,23 @@
           </div>
         </article>
 
-      </div>
-
-      <!-- DYNAMIC IN-PAGE PRODUCTS SHOWCASE -->
-      <div class="showcase-drawer" id="showcase-drawer" aria-hidden="true">
-        <div class="showcase-drawer__content">
-          <div class="showcase-drawer__header">
-            <div>
-              <h3 class="showcase-drawer__title" id="showcase-title">Category Products</h3>
-              <p class="showcase-drawer__subtitle" id="showcase-subtitle">Precision Korean Craftsmanship</p>
+        <!-- SHOWCASE DRAWER — lives inside the grid so it can be inserted after any row -->
+        <div class="showcase-drawer" id="showcase-drawer" aria-hidden="true">
+          <div class="showcase-drawer__content">
+            <div class="showcase-drawer__header">
+              <div>
+                <h3 class="showcase-drawer__title" id="showcase-title">Category Products</h3>
+                <p class="showcase-drawer__subtitle" id="showcase-subtitle">Precision Korean Craftsmanship</p>
+              </div>
+              <button class="showcase-drawer__close" id="showcase-close" aria-label="Close details">
+                <span class="material-icons-round">close</span>
+              </button>
             </div>
-            <button class="showcase-drawer__close" id="showcase-close" aria-label="Close details">
-              <span class="material-icons-round">close</span>
-            </button>
+            <div class="showcase-grid" id="showcase-grid"></div>
           </div>
-          <div class="showcase-grid" id="showcase-grid"></div>
         </div>
-      </div>
+
+      </div><!-- /.products__grid -->
 
     </div>
   </section>
