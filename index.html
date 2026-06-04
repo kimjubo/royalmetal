@@ -37,6 +37,21 @@
         <button class="lang-chip" data-lang="es" aria-label="Spanish">🇪🇸 ES</button>
         <button class="lang-chip" data-lang="cn" aria-label="Chinese">🇨🇳 CN</button>
       </div>
+
+      <!-- 모바일 전용 단일 언어 버튼 -->
+      <div class="lang-picker" id="lang-picker">
+        <button class="lang-picker__btn" id="lang-picker-btn" aria-haspopup="true" aria-expanded="false">
+          <span id="lang-picker-label">🌐 EN</span>
+          <span class="material-icons-round" style="font-size:16px">expand_more</span>
+        </button>
+        <div class="lang-picker__dropdown" id="lang-picker-dropdown" aria-hidden="true">
+          <button class="lang-picker__option lang-picker--active" data-lang="en">🌐 EN — English</button>
+          <button class="lang-picker__option" data-lang="ko">🇰🇷 KO — 한국어</button>
+          <button class="lang-picker__option" data-lang="jp">🇯🇵 JP — 日本語</button>
+          <button class="lang-picker__option" data-lang="es">🇪🇸 ES — Español</button>
+          <button class="lang-picker__option" data-lang="cn">🇨🇳 CN — 中文</button>
+        </div>
+      </div>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span class="material-icons-round">menu</span>
       </button>
