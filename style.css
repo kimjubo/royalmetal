@@ -224,6 +224,61 @@ a { color: inherit; text-decoration: none; }
   box-shadow: var(--elevation-1);
 }
 
+/* ── MOBILE LANG PICKER (single button + dropdown) ───────── */
+.lang-picker {
+  display: none;
+  position: relative;
+}
+.lang-picker__btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 10px;
+  border-radius: var(--shape-full);
+  border: 1px solid var(--md-outline-var);
+  background: var(--md-primary);
+  color: #fff;
+  font-family: inherit;
+  font-size: var(--type-label-sm);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.lang-picker__dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--md-surface);
+  border: 1px solid var(--md-outline-var);
+  border-radius: var(--shape-md);
+  box-shadow: var(--elevation-3);
+  min-width: 160px;
+  z-index: 200;
+  overflow: hidden;
+}
+.lang-picker__dropdown.open { display: block; }
+.lang-picker__option {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: var(--type-label);
+  color: var(--md-on-surface);
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.lang-picker__option:hover { background: var(--md-surface-1); }
+.lang-picker__option.lang-picker--active { color: var(--md-primary); font-weight: 700; }
+
+/* ─────────────────────────────────────────────────────────── */
 .hamburger {
   display: none;
   background: none;
@@ -1226,6 +1281,7 @@ body.loaded .hero-animate {
   .top-bar__inner { padding-inline: 16px; gap: 8px; }
   .top-bar__logo img { height: 32px; }
   .top-bar__nav, .top-bar__lang { display: none; }
+  .lang-picker { display: block; }
   .hamburger { display: flex; margin-left: auto; }
 
   /* Scroll offset for 60px header */
