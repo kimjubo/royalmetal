@@ -299,40 +299,31 @@ const TRANSLATIONS = {
 /* ── i18n engine ─────────────────────────────────────────── */
 const LANG_HTML = { en: 'en', ko: 'ko', jp: 'ja', es: 'es', cn: 'zh' };
 
-const LANG_LABEL = {
-  en: '🌐 EN', ko: '🇰🇷 KO', jp: '🇯🇵 JP', es: '🇪🇸 ES', cn: '🇨🇳 CN'
-};
-
 function applyTranslation(lang) {
   const dict = TRANSLATIONS[lang];
   if (!dict) return;
 
+  // Update <html lang>
   document.documentElement.lang = LANG_HTML[lang] || lang;
 
+  // data-i18n → textContent
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key] !== undefined) el.textContent = dict[key];
   });
 
+  // data-i18n-html → innerHTML  (for content with <br>, <a>, <strong> etc.)
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const key = el.getAttribute('data-i18n-html');
     if (dict[key] !== undefined) el.innerHTML = dict[key];
   });
 
-  // lang-chip (데스크톱 + 드로어)
+  // Highlight the active lang button
   document.querySelectorAll('.lang-chip[data-lang]').forEach(btn => {
     btn.classList.toggle('lang-active', btn.dataset.lang === lang);
   });
 
-  // lang-picker 단일 버튼 라벨 업데이트
-  const label = document.getElementById('lang-picker-label');
-  if (label) label.textContent = LANG_LABEL[lang] || lang.toUpperCase();
-
-  // lang-picker 드롭다운 active 표시
-  document.querySelectorAll('.lang-picker__option[data-lang]').forEach(opt => {
-    opt.classList.toggle('lang-picker--active', opt.dataset.lang === lang);
-  });
-
+  // Persist
   localStorage.setItem('rm_lang', lang);
 }
 
@@ -340,47 +331,9 @@ function applyTranslation(lang) {
 function initI18n() {
   const savedLang = localStorage.getItem('rm_lang') || 'en';
 
-  // 데스크톱 chip + 드로어 chip
   document.querySelectorAll('.lang-chip[data-lang]').forEach(btn => {
     btn.addEventListener('click', () => applyTranslation(btn.dataset.lang));
   });
-
-  // 모바일 picker 드롭다운 옵션
-  document.querySelectorAll('.lang-picker__option[data-lang]').forEach(opt => {
-    opt.addEventListener('click', () => {
-      applyTranslation(opt.dataset.lang);
-      closeLangPicker();
-    });
-  });
-
-  // 단일 버튼 토글
-  const pickerBtn      = document.getElementById('lang-picker-btn');
-  const pickerDropdown = document.getElementById('lang-picker-dropdown');
-
-  function closeLangPicker() {
-    if (!pickerDropdown) return;
-    pickerDropdown.classList.remove('open');
-    pickerDropdown.setAttribute('aria-hidden', 'true');
-    if (pickerBtn) pickerBtn.setAttribute('aria-expanded', 'false');
-  }
-
-  if (pickerBtn && pickerDropdown) {
-    pickerBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const isOpen = pickerDropdown.classList.contains('open');
-      if (isOpen) {
-        closeLangPicker();
-      } else {
-        pickerDropdown.classList.add('open');
-        pickerDropdown.setAttribute('aria-hidden', 'false');
-        pickerBtn.setAttribute('aria-expanded', 'true');
-      }
-    });
-
-    // 외부 클릭 시 닫기
-    document.addEventListener('click', () => closeLangPicker());
-    pickerDropdown.addEventListener('click', e => e.stopPropagation());
-  }
 
   applyTranslation(savedLang);
 }
