@@ -27,7 +27,9 @@
       <nav class="top-bar__nav" aria-label="Main navigation">
         <a href="#home"     class="nav-link active" data-section="home"     data-i18n="nav.home">Home</a>
         <a href="#about"    class="nav-link"         data-section="about"    data-i18n="nav.about">About</a>
+        <a href="#craft"    class="nav-link"         data-section="craft"    data-i18n="nav.craft">Craft</a>
         <a href="#products" class="nav-link"         data-section="products" data-i18n="nav.products">Products</a>
+        <a href="#oem"      class="nav-link"         data-section="oem"      data-i18n="nav.oem">OEM</a>
         <a href="#contact"  class="nav-link"         data-section="contact"  data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="top-bar__lang" role="group" aria-label="Language selector">
@@ -51,7 +53,9 @@
     </button>
     <a href="#home"     class="drawer__link" data-section="home"     data-i18n="nav.home">Home</a>
     <a href="#about"    class="drawer__link" data-section="about"    data-i18n="nav.about">About</a>
+    <a href="#craft"    class="drawer__link" data-section="craft"    data-i18n="nav.craft">Craft</a>
     <a href="#products" class="drawer__link" data-section="products" data-i18n="nav.products">Products</a>
+    <a href="#oem"      class="drawer__link" data-section="oem"      data-i18n="nav.oem">OEM</a>
     <a href="#contact"  class="drawer__link" data-section="contact"  data-i18n="nav.contact">Contact</a>
     <div class="drawer__lang" role="group" aria-label="Language selector">
       <button class="lang-chip lang-active" data-lang="en" aria-label="English">🌐 EN</button>
@@ -81,17 +85,17 @@
         <span class="hero__accent" data-i18n="hero.title2">Beauty Tools</span>
       </h1>
       <p class="hero__sub hero-animate" style="transition-delay:240ms" data-i18n="hero.sub">
-        Royal Metal Industrial Co., Ltd. — Korean manufacturer of premium nail clippers,
-        grooming instruments, and beauty care products.
+        Royal Metal Industrial Co., Ltd. makes nail clippers and grooming tools in Incheon,
+        and runs OEM programs for brands abroad.
       </p>
       <div class="hero__actions hero-animate" style="transition-delay:360ms">
         <a href="#products" class="btn-filled">
           <span class="material-icons-round">grid_view</span>
           <span data-i18n="hero.btn1">Explore Products</span>
         </a>
-        <a href="#contact" class="btn-tonal">
-          <span class="material-icons-round">mail_outline</span>
-          <span data-i18n="hero.btn2">Get in Touch</span>
+        <a href="#oem" class="btn-tonal">
+          <span class="material-icons-round">business</span>
+          <span data-i18n="hero.btn2">OEM Inquiry</span>
         </a>
       </div>
     </div>
@@ -152,7 +156,7 @@
   <!-- ─── STATS ROW ─────────────────────────────────────────────────── -->
   <div class="stats-row" aria-label="Company statistics">
     <div class="stat reveal">
-      <span class="stat__num" data-target="30">0</span><span class="stat__unit">+</span>
+      <span class="stat__num" data-target="70">0</span><span class="stat__unit">+</span>
       <span class="stat__label" data-i18n="stats.years">Years of Experience</span>
     </div>
     <div class="stat-divider" aria-hidden="true"></div>
@@ -172,13 +176,90 @@
     </div>
   </div>
 
+  <!-- ─── CRAFT ─────────────────────────────────────────────────────── -->
+  <section class="craft" id="craft" aria-label="How Royal Metal manufactures">
+    <div class="craft__inner">
+      <div class="section-header reveal">
+        <div class="section-eyebrow" data-i18n="craft.eyebrow">In our Incheon factory</div>
+        <h2 class="section-title" data-i18n="craft.title">From steel to a finished edge</h2>
+        <p class="section-sub" data-i18n="craft.sub">A Royal nail clipper passes through about eighty processes. Heat, quench, and finishing are what make the cut last.</p>
+      </div>
+      <ol class="craft__steps">
+        <li class="craft-step reveal">
+          <span class="craft-step__num">01</span>
+          <span class="material-icons-round" aria-hidden="true">layers</span>
+          <h3 data-i18n="craft.s1.title">Clipper steel</h3>
+          <p data-i18n="craft.s1.body">We start with S15CM heat-treatment steel made by POSCO, specified for nail clippers.</p>
+        </li>
+        <li class="craft-step reveal">
+          <span class="craft-step__num">02</span>
+          <span class="material-icons-round" aria-hidden="true">local_fire_department</span>
+          <h3 data-i18n="craft.s2.title">900°C, then oil</h3>
+          <p data-i18n="craft.s2.body">Blanks go through a 900°C furnace and an oil quench so the edge stays sharp and durable.</p>
+        </li>
+        <li class="craft-step reveal">
+          <span class="craft-step__num">03</span>
+          <span class="material-icons-round" aria-hidden="true">precision_manufacturing</span>
+          <h3 data-i18n="craft.s3.title">Eighty processes</h3>
+          <p data-i18n="craft.s3.body">Automatic lines carry each piece through forming, grinding, and finishing before it leaves the factory.</p>
+        </li>
+        <li class="craft-step reveal">
+          <span class="craft-step__num">04</span>
+          <span class="material-icons-round" aria-hidden="true">content_cut</span>
+          <h3 data-i18n="craft.s4.title">Built in-house</h3>
+          <p data-i18n="craft.s4.body">The same workshop develops our nose-hair trimmers, not only clippers bought in and rebranded.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
   <!-- ─── PRODUCTS ──────────────────────────────────────────────────── -->
   <section class="products" id="products" aria-label="Products">
     <div class="products__inner">
       <div class="section-header reveal">
         <div class="section-eyebrow" data-i18n="products.eyebrow">Our Range</div>
         <h2 class="section-title" data-i18n="products.title">Product Categories</h2>
-        <p class="section-sub" data-i18n="products.sub">From precision nail clippers to professional grooming kits — crafted with Korean excellence. Click any category below to view items in-page.</p>
+        <p class="section-sub" data-i18n="products.sub">Pick a category the way a manufacturer catalogue does, then open a card to see the pieces.</p>
+      </div>
+
+      <div class="featured reveal">
+        <button class="featured-card" type="button" data-jump="clippers">
+          <img src="https://royalmetal.co.kr/products/Nail_Clippers.jpg" alt="" referrerpolicy="no-referrer" />
+          <span class="featured-card__copy">
+            <span class="featured-card__tag" data-i18n="featured.tag">Signature</span>
+            <strong data-i18n="card.clippers.title">Nail Clippers</strong>
+            <span data-i18n="featured.clippers.body">The core of the factory: everyday and professional nail clippers.</span>
+            <span class="featured-card__cta" data-i18n="featured.cta">Open category</span>
+          </span>
+        </button>
+        <button class="featured-card" type="button" data-jump="hair">
+          <img src="https://royalmetal.co.kr/products/Hair_Grooming.jpg" alt="" referrerpolicy="no-referrer" />
+          <span class="featured-card__copy">
+            <span class="featured-card__tag" data-i18n="featured.tag">Signature</span>
+            <strong data-i18n="card.hair.title">Hair Grooming</strong>
+            <span data-i18n="featured.hair.body">Nose and ear trimmers developed and produced in-house.</span>
+            <span class="featured-card__cta" data-i18n="featured.cta">Open category</span>
+          </span>
+        </button>
+        <button class="featured-card" type="button" data-jump="sets">
+          <img src="https://royalmetal.co.kr/products/manicure_set.jpg" alt="" referrerpolicy="no-referrer" />
+          <span class="featured-card__copy">
+            <span class="featured-card__tag" data-i18n="featured.tag">Signature</span>
+            <strong data-i18n="card.sets.title">Manicure Sets</strong>
+            <span data-i18n="featured.sets.body">Gift-ready manicure cases for retail and promotion.</span>
+            <span class="featured-card__cta" data-i18n="featured.cta">Open category</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Product categories">
+        <button type="button" class="filter-chip is-active" role="tab" aria-selected="true" data-filter="all" data-i18n="filter.all">All</button>
+        <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="clippers" data-i18n="filter.clippers">Clippers</button>
+        <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="manicure" data-i18n="filter.manicure">Manicure</button>
+        <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="pedicure" data-i18n="filter.pedicure">Pedicure</button>
+        <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="beauty" data-i18n="filter.beauty">Beauty</button>
+        <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="hair" data-i18n="filter.hair">Grooming</button>
+        <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="sets" data-i18n="filter.sets">Sets</button>
       </div>
 
       <div class="products__grid" id="products-grid">
@@ -302,6 +383,35 @@
     </div>
   </section>
 
+  <!-- ─── OEM ───────────────────────────────────────────────────────── -->
+  <section class="oem" id="oem" aria-label="OEM and private label">
+    <div class="oem__inner">
+      <div class="oem__copy reveal">
+        <div class="section-eyebrow" data-i18n="oem.eyebrow">Private label</div>
+        <h2 class="section-title" data-i18n="oem.title">Your brand, our factory</h2>
+        <p class="section-sub" data-i18n="oem.body">Royal Metal supplies OEM programs for overseas brands, including customers in Germany and the United States. Model, finish, and quantity can follow your brief because we manufacture in Incheon.</p>
+        <a href="#inquiry" class="btn-filled">
+          <span class="material-icons-round">request_quote</span>
+          <span data-i18n="oem.cta">Request a quotation</span>
+        </a>
+      </div>
+      <ul class="oem__points">
+        <li class="oem__point reveal">
+          <h3 data-i18n="oem.p1.title">Own manufacturing</h3>
+          <p data-i18n="oem.p1.body">Clippers and grooming tools are made in our factory, so spec changes stay on one line.</p>
+        </li>
+        <li class="oem__point reveal">
+          <h3 data-i18n="oem.p2.title">Model and quantity</h3>
+          <p data-i18n="oem.p2.body">We match style, quality level, and order size — from a trial run to a repeat program.</p>
+        </li>
+        <li class="oem__point reveal">
+          <h3 data-i18n="oem.p3.title">Export desk</h3>
+          <p data-i18n="oem.p3.body">Products already ship to five continents. Write to the export desk and we will send an offer.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ─── CONTACT ───────────────────────────────────────────────────── -->
   <section class="contact" id="contact" aria-label="Contact">
     <div class="contact__inner">
@@ -361,6 +471,52 @@
           ></iframe>
         </div>
       </div>
+
+      <form class="inquiry" id="inquiry" novalidate>
+        <div class="section-header">
+          <div class="section-eyebrow" data-i18n="inquiry.eyebrow">Quotation</div>
+          <h2 class="section-title" data-i18n="inquiry.title">Tell us what you need</h2>
+          <p class="section-sub" data-i18n="inquiry.sub">Buyers and distributors: send a note and we will reply with an offer.</p>
+        </div>
+        <div class="inquiry__grid">
+          <label class="field">
+            <span data-i18n="inquiry.name">Name</span>
+            <input name="name" required autocomplete="name" data-i18n-placeholder="inquiry.ph.name" placeholder="Your name" />
+          </label>
+          <label class="field">
+            <span data-i18n="inquiry.company">Company</span>
+            <input name="company" autocomplete="organization" data-i18n-placeholder="inquiry.ph.company" placeholder="Company name" />
+          </label>
+          <label class="field">
+            <span data-i18n="inquiry.email">Email</span>
+            <input name="email" type="email" required autocomplete="email" data-i18n-placeholder="inquiry.ph.email" placeholder="you@company.com" />
+          </label>
+          <label class="field">
+            <span data-i18n="inquiry.interest">Interest</span>
+            <select name="interest">
+              <option value="Nail clippers" data-i18n="inquiry.opt.clippers">Nail clippers</option>
+              <option value="Manicure implements" data-i18n="inquiry.opt.manicure">Manicure implements</option>
+              <option value="Pedicure tools" data-i18n="inquiry.opt.pedicure">Pedicure tools</option>
+              <option value="Beauty tools" data-i18n="inquiry.opt.beauty">Beauty tools</option>
+              <option value="Hair grooming" data-i18n="inquiry.opt.hair">Hair grooming</option>
+              <option value="Manicure sets" data-i18n="inquiry.opt.sets">Manicure sets</option>
+              <option value="OEM / private label" data-i18n="inquiry.opt.oem">OEM / private label</option>
+            </select>
+          </label>
+          <label class="field field--wide">
+            <span data-i18n="inquiry.message">Message</span>
+            <textarea name="message" required rows="5" data-i18n-placeholder="inquiry.ph.message" placeholder="Models, quantity, destination market"></textarea>
+          </label>
+        </div>
+        <div class="inquiry__actions">
+          <button type="submit" class="btn-filled">
+            <span class="material-icons-round">send</span>
+            <span data-i18n="inquiry.submit">Send inquiry</span>
+          </button>
+          <p class="inquiry__hint" data-i18n="inquiry.note">This opens your email app addressed to master@royalmetal.co.kr.</p>
+        </div>
+        <p class="inquiry__status" id="inquiry-status" role="status" hidden></p>
+      </form>
     </div>
   </section>
 
@@ -375,8 +531,16 @@
         <h4 data-i18n="footer.nav">Navigation</h4>
         <a href="#home"     data-i18n="footer.home">Home</a>
         <a href="#about"    data-i18n="footer.about">About</a>
+        <a href="#craft"    data-i18n="nav.craft">Craft</a>
         <a href="#products" data-i18n="footer.products">Products</a>
+        <a href="#oem"      data-i18n="nav.oem">OEM</a>
         <a href="#contact"  data-i18n="footer.contact">Contact</a>
+      </div>
+      <div class="footer__links">
+        <h4 data-i18n="footer.office">Office</h4>
+        <p class="footer__meta" data-i18n-html="footer.addr">1, Baekbeom-ro 701beon-gil,<br />Seo-gu, Incheon, South Korea</p>
+        <a href="tel:+82275370490">+82-2-753-7049</a>
+        <a href="mailto:master@royalmetal.co.kr">master@royalmetal.co.kr</a>
       </div>
       <div class="footer__social">
         <h4 data-i18n="footer.follow">Follow Us</h4>
@@ -391,7 +555,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p>&copy; 2025 Royal Metal Industrial Co., Ltd. All rights reserved.</p>
+      <p>&copy; 2026 Royal Metal Industrial Co., Ltd. All rights reserved.</p>
     </div>
   </footer>
 
